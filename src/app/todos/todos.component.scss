@@ -1,83 +1,85 @@
 .heading-section {
-    background: linear-gradient(to right, rgb(2, 228, 171), rgb(74, 215, 240));
+  background: linear-gradient(to right, rgb(2, 228, 171), rgb(74, 215, 240));
 
-    padding: 100px;
-    padding-bottom: 150px;
+  padding: 100px;
+  padding-bottom: 150px;
 
-    h1.title {
-        font-weight: bold;
-        color: #fff;
-        text-shadow: 0px 1px 2px rgba(black, 0.15);
-    }
+  h1.title {
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0px 1px 2px rgba(black, 0.15);
+  }
 }
 
 .container {
-    max-width: 800px;
+  max-width: 800px;
 }
 
 .add-todo-box {
-    padding: 25px;
-    background: #fff;
+  padding: 25px;
+  background: #fff;
 
-    border-radius: 4px;
-    margin-top: -68px;
+  border-radius: 4px;
+  margin-top: -68px;
 
-    box-shadow: 0 4px 12px rgba(black, 0.08);
+  box-shadow: 0 4px 12px rgba(black, 0.08);
 }
 
 .todo-item {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
 
-    padding: 35px 15px;
+  padding: 35px 15px;
 
-    border-bottom: 1px solid #f2f3f5;
+  border-bottom: 1px solid #f2f3f5;
 
-    &.completed {
-        color: #aaa;
-    }
+  &.completed {
+    color: #aaa;
+  }
 }
 
 .todo-item .check-box {
-    display: flex;
-    
-    flex-shrink: 0;
+  display: flex;
 
-    border: 2px solid #eee;
-    border-radius: 50%;
+  flex-shrink: 0;
 
-    margin-right: 20px;
+  border: 2px solid #eee;
+  border-radius: 50%;
 
-    height: 28px;
-    width: 28px;
+  margin-right: 20px;
 
-    transition: background-color 0.2s;
+  height: 28px;
+  width: 28px;
 
-    i.material-icons {
-        font-size: 20px;
-        margin: auto;
+  transition: background-color 0.2s;
 
+  i.material-icons {
+    font-size: 20px;
+    margin: auto;
 
-        // Hide by default
-        opacity: 0;
+    color: #333;
 
-        transition: opacity 0.2s;
-    }
+    // Hide by default
+    opacity: 0;
+
+    transition: opacity 0.2s;
+  }
 }
 
 .todo-item:hover .check-box {
-    background: #eee;
-    i.material-icons {
-        opacity: 0.30;
-    }
+  background: #eee;
+  i.material-icons {
+    opacity: 0.3;
+  }
 }
 
 .todo-item.completed .check-box {
-    background: rgb(11, 223, 170);
+  background: rgb(11, 223, 170);
+  border-color: rgb(11, 223, 170);
 
-    i.material-icons {
-        opacity: 1;
-        color: black;
-    }
-}       
+  i.material-icons {
+    opacity: 1;
+    color: black;
+  }
+}
